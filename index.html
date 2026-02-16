@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Runarounds Camera</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="camera-wrapper">
+  <img src="assets/camera.png" class="camera-body">
+
+  <div class="lcd-screen" id="lcdScreen">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="photoCanvas"></canvas>
+      <div id="stickerLayer"></div>
+  </div>
+
+  <button id="shutterBtn"></button>
+</div>
+
+<div class="controls">
+
+<div class="border-picker">
+<span>Border:</span>
+<div class="color" data-color="#B5ACA3" style="background:#B5ACA3"></div>
+<div class="color" data-color="#B0D2EC" style="background:#B0D2EC"></div>
+<div class="color" data-color="#849DBB" style="background:#849DBB"></div>
+<div class="color" data-color="#648EC0" style="background:#648EC0"></div>
+<div class="color" data-color="#533A33" style="background:#533A33"></div>
+<div class="color" data-color="#6D6943" style="background:#6D6943"></div>
+<div class="color" data-color="#48372F" style="background:#48372F"></div>
+<div class="color" data-color="#F4F3EE" style="background:#F4F3EE"></div>
+<div class="color" data-color="#C8A1B1" style="background:#C8A1B1"></div>
+</div>
+
+<div id="stickerTray" class="sticker-tray hidden">
+<img src="assets/stickers/fanclub.png" class="sticker-option">
+<img src="assets/stickers/soundcheck.png" class="sticker-option">
+<img src="assets/stickers/boyfriend.png" class="sticker-option">
+<img src="assets/stickers/dallas.png" class="sticker-option">
+<img src="assets/stickers/wentshow.png" class="sticker-option">
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
