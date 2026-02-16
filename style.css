@@ -19,24 +19,25 @@ width:100%;
 display:block;
 }
 
-.lcd-screen{
-position:absolute;
-top:13%;
-left:9%;
-width:57%;
-height:45%;
-overflow:hidden;
-background:black;
-border:12px solid transparent;
-box-sizing:border-box;
+.camera-screen {
+  position: absolute;
+  top: 90px;   /* adjust slightly if needed */
+  left: 85px;  /* adjust slightly if needed */
+  width: 470px;   /* exact LCD width */
+  height: 310px;  /* exact LCD height */
+  overflow: hidden;
+  border-radius: 6px;
+  background: black;
 }
 
-video,canvas{
-position:absolute;
-width:100%;
-height:100%;
-object-fit:cover;
-transform:scaleX(-1);
+#video, #photoCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* mirror */
 }
 
 canvas{display:none;}
